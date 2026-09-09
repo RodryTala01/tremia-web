@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* Paleta oficial: docs/brand.md. */
+:root {
+  --tremia-blue: #3c5784;
+  --tremia-white: #fefefe;
+  --tremia-gray: #444444;
+  --tremia-dark-blue: #072b69;
+  --tremia-black: #101010;
+  --tremia-light-blue: #85e6ff;
+}
+
+@theme inline {
+  --color-tremia-blue: var(--tremia-blue);
+  --color-tremia-white: var(--tremia-white);
+  --color-tremia-gray: var(--tremia-gray);
+  --color-tremia-dark-blue: var(--tremia-dark-blue);
+  --color-tremia-black: var(--tremia-black);
+  --color-tremia-light-blue: var(--tremia-light-blue);
+
+  --font-heading: var(--font-exo-2), sans-serif;
+  --font-body: var(--font-open-sans), sans-serif;
+  --font-label: var(--font-montserrat), sans-serif;
+}
+
+body {
+  background: var(--tremia-white);
+  color: var(--tremia-black);
+}
