@@ -1,12 +1,29 @@
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import Intro from "@/components/Intro";
+import Services from "@/components/Services";
+import Metrics from "@/components/Metrics";
+import Industries from "@/components/Industries";
+import Partners from "@/components/Partners";
+import Process from "@/components/Process";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+
 export default function Home() {
   return (
-    <main className="flex min-h-svh flex-col items-center justify-center gap-3 px-6 py-12 text-center">
-      <h1 className="font-heading text-5xl font-semibold text-tremia-blue sm:text-6xl">
-        Tremia
-      </h1>
-      <p className="font-label text-lg text-tremia-gray sm:text-xl">
-        Tecnología Aplicada
-      </p>
-    </main>
+    <>
+      <Header />
+      <main id="contenido" tabIndex={-1}>
+        <Hero />
+        <Intro />
+        <Services />
+        <Metrics />
+        <Industries />
+        <Partners />
+        <Process />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }
