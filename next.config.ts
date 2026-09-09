@@ -1,8 +1,14 @@
 import type { NextConfig } from "next";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const nextConfig: NextConfig = {
-  // Preservar las instrucciones del repositorio al iniciar next dev.
-  agentRules: false,
+  output: "export",
+  trailingSlash: true,
+  basePath,
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
